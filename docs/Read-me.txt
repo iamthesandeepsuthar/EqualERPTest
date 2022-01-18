@@ -1,0 +1,74 @@
+
+
+Scaffold-DbContext "server=localhost;port=3306;user=root;password=manager;database=aisinventory" MySql.EntityFrameworkCore -OutputDir DataAccess\DataObjects -f
+
+
+git init
+git add --all
+git commit -m "Initial Commit"
+
+
+https://projects.zoho.in/portal/saraffsphotmaildotcom#bugsview/94314000000022021/6
+
+
+ng g service shared/services/Paym--skipTests=true
+ng g model shared/model/modelName
+
+                //var records = await (from cl in Context.Journalentries1
+                //                         // join ac in Context.Accounts on cl.CreditAccountId equals ac.Id
+                //                     join st in Context.Statuses on cl.EntryTypeId equals st.StatusId into debitJournal
+                //                     from dj in debitJournal.DefaultIfEmpty()
+                //                     where cl.CreditAccountId == request.AccountId
+                //                     // && (cl.Date >= request.FromDate  && cl.Date <= request.ToDate) 
+                //                     select new JournalLedgerModel
+                //                     {
+                //                         Date = cl.Date,
+                //                         TransactionType = dj.StatusDesc,
+                //                         VoucherNumber = cl.VoucherNumber,
+                //                         VoucherId = cl.VoucherId,
+                //                         VoucherType = dj.StatusDesc,
+                //                         DebitAmount = cl.DebitAmount,
+                //                         IsDebit = true,
+                //                         CreditAmount = 0,
+                //                         TransactionTypeId = cl.EntryTypeId,
+                //                         IsCredit = false,
+                //                         AccountId = cl.DebitAccountId
+                //                     }).
+                //                      Union(from cl in Context.Journalentries1
+                //                            join ac in Context.Accounts on cl.DebitAccountId equals ac.Id
+                //                            join st in Context.Statuses on cl.EntryTypeId equals st.StatusId into creditJournal
+                //                            from cj in creditJournal.DefaultIfEmpty()
+                //                            where cl.DebitAccountId == request.AccountId
+                //                            // && (cl.Date >= request.FromDate  && cl.Date <= request.ToDate) 
+                //                            select new JournalLedgerModel
+                //                            {
+                //                                Date = cl.Date,
+                //                                TransactionType = cj.StatusDesc,
+                //                                VoucherNumber = cl.VoucherNumber,
+                //                                VoucherId = cl.VoucherId,
+                //                                VoucherType = cj.StatusDesc,
+                //                                DebitAmount = 0,
+                //                                IsDebit = false,
+                //                                TransactionTypeId = cl.EntryTypeId,
+                //                                CreditAmount = cl.CreditAmount,
+                //                                IsCredit = true,
+                //                                AccountId = cl.DebitAccountId
+                //                            }).ToListAsync();
+
+                //final.OpeningBalance = openingBalance ?? 0;
+                //final.Ledger = records;
+
+//  Under Group Code 
+
+ //var data = await (from c1 in Context.Accounts
+            //                  where c1.ParentId != null && c1.IsGroup == true
+            //                  select new UnderGroupModel
+            //                  {
+            //                      Id = c1.Id,
+            //                      Name = c1.Name,
+            //                      ParentId = c1.ParentId,
+            //                      ParentName = (from q in Context.Accounts where q.Id == c1.ParentId select q.Name).FirstOrDefault()
+
+            //                  }).ToListAsync();
+
+            //return data.Count > 0 ? data : null;

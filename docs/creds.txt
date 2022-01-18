@@ -1,0 +1,6 @@
+FTP Details
+
+Host: 103.234.116.215
+User: vediancrmcom
+Pass: wydlripgmjekq0ouasv#
+Folder: accounts.vediancrm.com
